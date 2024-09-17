@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Commission Calculator</h1>
+        
+        <div class="input-section">
+            <label for="locks">Number of Locks Sold:</label>
+            <input type="number" id="locks" placeholder="Enter locks sold">
+            
+            <label for="stocks">Number of Stocks Sold:</label>
+            <input type="number" id="stocks" placeholder="Enter stocks sold">
+            
+            <label for="barrels">Number of Barrels Sold:</label>
+            <input type="number" id="barrels" placeholder="Enter barrels sold">
+            
+            <button onclick="addSales()">Add</button>
+        </div>
+        
+        <div class="totals-section">
+            <p>Total Locks Sold: <span id="totalLocks">0</span></p>
+            <p>Total Stocks Sold: <span id="totalStocks">0</span></p>
+            <p>Total Barrels Sold: <span id="totalBarrels">0</span></p>
+        </div>
+        
+        <div class="sales-section">
+            <p>Total Sales: $<span id="totalSales">0.00</span></p>
+            <p>Calculated Commission: $<span id="commission">0.00</span></p>
+        </div>
+        
+        <div class="actions-section">
+            <button onclick="calculateCommission()">Calculate Commission</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Kanokwan Soontranon</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
